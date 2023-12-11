@@ -1,0 +1,18 @@
+.card{
+    margin-top: 30px;
+    margin-left: 300px;
+    margin-right: 300px;
+    border-color: #eee;
+  
+}
+.btn-primary{
+    background-color:  #ef4b27;
+    border-color: #ef4b27;
+}
+.input{
+   
+    margin-left: 60px;
+    width: 80%; 
+    height: 40px; 
+    padding: 5px; 
+}

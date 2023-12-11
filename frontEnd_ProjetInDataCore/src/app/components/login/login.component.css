@@ -1,0 +1,29 @@
+.card{
+    margin-top: 50px;
+    margin-left: 305px;
+    margin-bottom: 20px;
+    margin-right: 305px;
+}
+.imageDC{
+    margin-top: 10px;
+    margin-left: 230px;
+}
+.input{
+    margin-left:60px ;
+    margin-right: 20px;
+    width: 80%; 
+    height: 40px; 
+    padding: 5px; 
+    
+}
+.btn-primary{
+    margin-left: 260px;
+    width:  100px;
+    height: 40px;
+    background-color: #ef4b27;
+    border: #ef4b27;
+}
+.label{
+    margin-left:60px ;
+    font-weight:normal;
+}

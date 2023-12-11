@@ -1,0 +1,22 @@
+<form class="card" [formGroup]="formLogin" (ngSubmit)="onLogin()">
+    <div class="imageDC">
+        <img src="../../../assets/inDataCore.png" class="custom-logo">
+    </div>
+    <div>
+        <label class="label mb-2">Email</label>
+    </div>
+    <div>
+        <input class="input mb-2" type="email" formControlName="email" name="email" placeholder="Email">
+    </div>
+    <div>
+        <label class="label mb-2">Password</label>
+    </div>
+    <div>
+        <input class="input mb-3" type="password" formControlName="password" name="password" placeholder="Password">
+    </div>
+    <button type="submit" class="btn btn-primary mb-3">Login</button>
+    <div>
+        <p class="small fw-bold mb-4" style="margin-left: 200px;">Don't have an account? <a routerLink="/register"
+            class="link-danger">Register</a></p>
+    </div>
+</form>

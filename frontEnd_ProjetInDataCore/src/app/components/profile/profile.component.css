@@ -1,0 +1,7 @@
+.imgProfile{
+    height: 100px;
+    width: 100px;
+    border-radius: 20%;
+    object-fit: cover;
+    margin-top: 40px;
+}

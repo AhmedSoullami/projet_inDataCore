@@ -1,0 +1,26 @@
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<div>
+  <nav style="height: 40px;background-color: black; "></nav>
+    <h2>Upload File</h2>
+    
+    <input  type="file" (change)="onFileSelected($event)" />
+    
+    
+    <div *ngIf="file">
+      <h4>Selected File:</h4>
+      <p>{{ file.name }}</p>
+    </div>
+  
+    <button (click)="uploadFile()">
+        <mat-icon>upload_file</mat-icon>
+        </button>
+   
+    <div *ngIf="uploading">
+      <p>Uploading...</p>
+      
+      
+    </div>
+  </div>
+  

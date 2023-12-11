@@ -1,0 +1,23 @@
+
+<form class="card1 card" [formGroup]="formRegister" (ngSubmit)="onRegister()">
+     <h3 class="mb-3" style="margin-left: 250px;">S'inscrire</h3>
+     <div>
+        <input  formControlName="firstName" class="input  mb-3" type="text" name="name" placeholder="Votre prenom">
+    </div>
+    <div>
+        <input formControlName="lastName" class="input   mb-3" type="text" name="prenom" placeholder="Votre nom">
+    </div>
+    <div>
+        <input  formControlName="email" class="input   mb-3" type="email" name="email" placeholder="Email">
+    </div>
+    <div>
+        <input formControlName="password" class="input  mb-3" type="password" name="passe" placeholder="Mot de passe ">
+    </div>
+    <div>
+        <input formControlName="password2" class="input  mb-4" type="password" name="password2" placeholder="Confirmer votre mot de passe ">
+    </div>
+    <div class="d-flex justify-content-center">
+        <button type="submit" class="btn btn-primary mb-3">Register</button>
+      </div>
+      <p class="small fw-bold mt-2 pt-1 mb-3 d-flex justify-content-center">Already have an account? <a routerLink="/login" class="link-danger">Login</a></p>
+</form>

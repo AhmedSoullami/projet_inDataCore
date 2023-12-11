@@ -1,0 +1,38 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<div class="container">
+  <div class="row">
+      <div>
+          <button class="btn btn-primary mb-3" (click)="OnAjoute()">Ajouter</button>
+          <button class="btn btn-danger mb-3" (click)="onBack()">Back</button>
+      </div>
+      
+      <table class="table table-striped" style="width: 600px; margin-left: 10px;">
+          <thead>
+              <tr>
+                  <th>Nom</th>
+                  <th>Description</th>
+                  <th>Prix</th>
+                  <th>Actions</th> 
+              </tr>
+          </thead>
+          <tbody>
+              <tr *ngFor="let product of products">
+                  <td >{{ product.name }}</td>
+                  <td>{{ product.description }}</td>
+                  <td>{{ product.price }}</td>
+                  <td>
+                      <button mat-icon-button (click)="modifierProduit(product.id)" >
+                          <mat-icon style="color: green;" >update</mat-icon>
+                      </button>
+                      <button mat-icon-button (click)="supprimerProduit(product.id)" >
+                          <mat-icon style="color: red;">delete</mat-icon>
+                      </button>
+                  </td>
+              </tr>
+          </tbody>
+      </table>
+     
+
+  </div>
+ 
+</div>
